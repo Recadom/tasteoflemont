@@ -21,7 +21,18 @@
 	<!--[if lt IE 9]>
     	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    <style>
+        @media screen and (max-width: 600px) {
+          #donate {
+            visibility: hidden;
+            clear: both;
+            float: left;
+            margin: 10px auto 5px 20px;
+            width: 28%;
+            display: none;
+          }
+        }
+    </style>
 </head>
 <body class="shop home-page">
 
@@ -53,15 +64,16 @@
                         <li>
 							<a href="#menu" data-offset="-60" class="scroll-link">Sponsors</a>
 						</li>
+                        <li>
+							<a href="https://lemont.revtrak.net/Donations/#/v/Donation-LHSEF" data-offset="-60">Donate</a>
+						</li>
 					</ul>
 				</nav>
 				<div class="side-navigation-footer">
 					<ul class="social-list list-horizontal">
-						<li><a href="#"><span class="icon-twitter small"></span></a></li>
-						<li><a href="#"><span class="icon-facebook small"></span></a></li>
-						<li><a href="#"><span class="icon-instagram small"></span></a></li>
+						<li><a href="https://www.facebook.com/lhsef/" target="_blank"><span class="icon-facebook small"></span></a></li>
 					</ul>
-					<p class="copyright no-margin-bottom">&copy; 2017 Implerum.</p>
+					<p class="copyright no-margin-bottom">&copy; 2017 LHSEF.</p>
 				</div>
 			</div>
 		</div>
@@ -85,90 +97,15 @@
 							</div>
 							<nav class="navigation nav-block secondary-navigation nav-right">
 								<ul>
-									<!-- Dropdown Cart Overview
-									<li>
-										<div class="dropdown">
-											<a href="#" class="nav-icon cart button no-page-fade"><span class="cart-indication"><span class="icon-shopping-cart"></span> <span class="badge">3</span></span></a>
-											<ul class="dropdown-list custom-content cart-overview">
-												<li class="cart-item">
-													<a href="single-product.html" class="product-thumbnail">
-														<img src="images/design-agency/portfolio/grid/no-margins/project-6-square.jpg" alt="" />
-													</a>
-													<div class="product-details">
-														<a href="single-product.html" class="product-title">
-															Cotton Jump Suit
-														</a>
-														<span class="product-quantity">2 x</span>
-														<span class="product-price"><span class="currency">$</span>15.00</span>
-														<a href="#" class="product-remove icon-cancel"></a>
-													</div>
-												</li>
-												<li class="cart-item">
-													<a href="single-product.html" class="product-thumbnail">
-														<img src="images/design-agency/portfolio/grid/no-margins/project-7-square.jpg" alt="" />
-													</a>
-													<div class="product-details">
-														<a href="single-product.html" class="product-title">
-															Cotton Jump Suit
-														</a>
-														<span class="product-quantity">2 x</span>
-														<span class="product-price"><span class="currency">$</span>15.00</span>
-														<a href="#" class="product-remove icon-cancel"></a>
-													</div>
-												</li>
-												<li class="cart-item">
-													<a href="single-product.html" class="product-thumbnail">
-														<img src="images/design-agency/portfolio/grid/no-margins/project-8-square.jpg" alt="" />
-													</a>
-													<div class="product-details">
-														<a href="single-product.html" class="product-title">
-															Cotton Jump Suit
-														</a>
-														<span class="product-quantity">2 x</span>
-														<span class="product-price"><span class="currency">$</span>15.00</span>
-														<a href="#" class="product-remove icon-cancel"></a>
-													</div>
-												</li>
-												<li class="cart-subtotal">
-													Sub Total
-													<span class="amount"><span class="currency">$</span>15.00</span>
-												</li>
-												<li class="cart-actions">
-													<a href="cart.html" class="view-cart">View Cart</a>
-													<a href="checkout.html" class="checkout button small"><span class="icon-check"></span> Checkout</a>
-												</li>
-											</ul>
-										</div>
-									</li> -->
-									<!-- Dropdown Search Module
-									<li>
-										<div class="dropdown">
-											<a href="#" class="nav-icon search button no-page-fade"><span class="icon-magnifying-glass"></span></a>
-											<div class="dropdown-list custom-content cart-overview">
-												<div class="search-form-container site-search">
-													<form action="#" method="get" novalidate>
-														<div class="row">
-															<div class="column width-12">
-																<div class="field-wrapper">
-																	<input type="text" name="search" class="form-search form-element no-margin-bottom" placeholder="type &amp; hit enter...">
-																	<span class="border"></span>
-																</div>
-															</div>
-														</div>
-													</form>
-													<div class="form-response"></div>
-												</div>
-											</div>
-										</div>
-									</li> -->
 									<li>
 										<div class="v-align-middle">
 											<a href="http://lhsef2017.bpt.me" class="button small pull-right no-margin-bottom">Buy Tickets</a>
 										</div>
+                                        
 									</li>
-                                    <li>
+                                    <li id="donate">
 										<div class="v-align-middle">
-											<a href="https://lemont.revtrak.net/Donations/#/v/Donation-LHSEF" class="button small pull-right no-margin-bottom">Donate</a>
+											<a href="https://lemont.revtrak.net/Donations/#/v/Donation-LHSEF" class="button small pull-right no-margin-bottom" >Donate</a>
 										</div>
 									</li>
 									<li class="aux-navigation hide">
@@ -257,7 +194,7 @@
 												<div class="column width-8 offset-2 center">
 													<p class="text-uppercase mb-10">About/Explanation</p>
 													<h2>A Culinary Journey</h2>
-													<p class="mb-50">Taste of Lemont is a fun, family-friendly event - made possible in part by Visionary Sponsor Citgo - which will feature some of the best food and beverages that the Lemont community can offer, as well a concert from one of Chicagoland’s top bands - Mike and Joe!</p>
+													<p class="mb-50">Taste of Lemont is a fun, family friendly event - made possible in part by Visionary Sponsor Citgo - which will feature some of the best food and beverages that the Lemont community can offer, as well a concert from one of Chicagoland’s top bands - Mike & Joe!</p>
 												</div>
 											</div>
 										</div>
@@ -304,7 +241,7 @@
 										<p class="text-uppercase mb-10">Band</p>
 										<h2>Mike and Joe</h2>
 										<p class="mb-50">Mike and Joe is one of the nation’s top rock cover bands. Its sets typically feature hits from artists such as Foo Fighters and ranging from U2 and Maroon 5, to Justin Timberlake and the Dave Matthews Band. While their shows most often feature hits from the 90s through today, Mike and Joe throws in songs from classic rock royalty such as The Eagles and Fleetwood Mac as well. The LHSEF is excited to welcome Mike and Joe’s stable of loyal fans to the Taste of Lemont in 2017!</p>
-										<p class="opacity-05 weight-bold"> - Culinary Chef - Sartre</p>
+										<p class="opacity-05 weight-bold"> - <a href="http://www.mikeandjoe.com/" target="_blank">www.mikeandjoe.com</a></p>
 									</div>
 								</div>
 							</div>
@@ -334,7 +271,7 @@
 									<ul class="tms-slides">	
 										<li class="tms-slide">
 											<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="000000" data-hover-bkg-opacity="0.4">
-                                                <a class="overlay-link" href="#" >
+                                                <a class="overlay-link" href="http://www.gelslemont.com/" target="_blank">
 												<img data-src="images/restaurant/portfolio/grid/no-margins/vendor1.jpg" src="images/blank.png" alt=""/>
 												<!--div class="caption-over-outer" style="background-color:rgba(0, 0, 0, 0.3); width: 99.8%">
 													<div class="caption-over-inner v-align-bottom left color-white font-alt-1 weight-light text-uppercase">
@@ -347,7 +284,7 @@
                                         
                                         <li class="tms-slide">
 											<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="000000" data-hover-bkg-opacity="0.4">
-                                                <a class="overlay-link" href="#" >
+                                                <a class="overlay-link" href="http://www.jimbospizza.com/" target="_blank">
 												<img data-src="images/restaurant/portfolio/grid/no-margins/vendor2.jpg" src="images/blank.png" alt=""/>
                                                 </a>
 											</div>
@@ -355,7 +292,7 @@
                                         
                                         <li class="tms-slide">
 											<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="000000" data-hover-bkg-opacity="0.4">
-                                                <a class="overlay-link" href="#" >
+                                                <a class="overlay-link" href="http://muffinsicecream.com/" target="_blank">
 												<img data-src="images/restaurant/portfolio/grid/no-margins/vendor3.jpg" src="images/blank.png" alt=""/>
                                                 </a>
 											</div>
@@ -363,7 +300,7 @@
                                         
                                         <li class="tms-slide">
 											<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="000000" data-hover-bkg-opacity="0.4">
-                                                <a class="overlay-link" href="#" >
+                                                <a class="overlay-link" href="http://www.rusticknead.com/" target="_blank">
 												<img data-src="images/restaurant/portfolio/grid/no-margins/vendor4.jpg" src="images/blank.png" alt=""/>
                                                 </a>
 											</div>
@@ -371,7 +308,7 @@
                                         
                                         <li class="tms-slide">
 											<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="000000" data-hover-bkg-opacity="0.4">
-                                                <a class="overlay-link" href="#" >
+                                                <a class="overlay-link" href="http://www.frontstreetcantinalemont.com/" target="_blank">
 												<img data-src="images/restaurant/portfolio/grid/no-margins/vendor5.jpg" src="images/blank.png" alt=""/>
                                                 </a>
 											</div>
@@ -379,7 +316,7 @@
                                         
                                         <li class="tms-slide">
 											<div class="thumbnail img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="000000" data-hover-bkg-opacity="0.4">
-                                                <a class="overlay-link" href="#" >
+                                                <a class="overlay-link" href="http://www.lemonthouserestaurant.com/" target="_blank">
 												<img data-src="images/restaurant/portfolio/grid/no-margins/vendor6.jpg" src="images/blank.png" alt=""/>
                                                 </a>
 											</div>
@@ -601,8 +538,8 @@
 						<div class="column width-8 offset-2">
 							<div class="stat mb-30">
 								<div class="stat-inner">
-									<p class="description mb-10">ZAGAT / New York</p>
-									<p class="counter text-uppercase"><span class="stat-counter weight-bold" data-count-from="30" data-count-to="2">30</span> Leading <strong>Restaurant </strong> on <strong>The East Coast</strong></p>
+									<p class="description mb-10">Taste of Lemont</p>
+									<p class="counter text-uppercase"><span class="stat-counter weight-bold" data-count-from="30" data-count-to="3">30</span> Years <strong>and </strong> going <strong>Strong</strong></p>
 								</div>
 							</div>
 						</div>
@@ -677,7 +614,7 @@
 					<div class="row">
 						<div class="column width-12">
 							<div class="footer-bottom-inner">
-								<p class="copyright pull-left clear-float-on-mobile">&copy; Implerum. All Rights Reserved. <a href="#" class="scroll-to-top">Top</a></p>
+								<p class="copyright pull-left clear-float-on-mobile">&copy; LHSEF. All Rights Reserved. <a href="#" class="scroll-to-top">Top</a></p>
 							</div>
 						</div>
 					</div>
