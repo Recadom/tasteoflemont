@@ -31,7 +31,22 @@
             width: 28%;
             display: none;
           }
+		  
         }
+		
+		@media screen and (max-width: 600px) {
+		#logo {
+			visibility: hidden;
+			display: none;
+		  }
+		}
+		
+		@media screen and (max-width: 960px) {
+			.lightLogo {
+				visibility: hidden;
+				display: none;
+			  }
+		}
         
         @media screen and (max-width: 100px) {
           #tickets {
@@ -113,10 +128,10 @@
 				<div class="header-inner">
 					<div class="row nav-bar">
 						<div class="column width-12 nav-bar-inner">
-							<div class="logo">
-								<div class="logo-inner">
+							<div class="logo" id="logo">
+								<div class="logo-inner" >
 									<a href="index.html"><img src="images/logo-dark.png" alt="Sartre Logo" /></a>
-									<a href="index.html"><img src="images/logo.png" alt="Sartre Logo" /></a>
+									<a href="index.html" class="lightLogo"><img  class="lightLogo" src="images/logo.png" alt="Sartre Logo" /></a>
                                     <p class="tms-caption title-large text-uppercase color-white lspacing-medium mb-20 center">Taste of Lemont</p>
 								</div>
 							</div>
